@@ -1,11 +1,11 @@
 function parseNumberToFizzBuzz(number){
-    let canBeDividedByThree = number % 3 === 0;
-    let canBeDividedByFive = number % 5 === 0;
-    let canBeDividedByThreeAndFive = number % 15 === 0;
+    const canBeDividedByThree = number % 3 === 0;
+    const canBeDividedByFive = number % 5 === 0;
+    const canBeDividedByThreeAndFive = number % 15 === 0;
 
     const numberAsString = number.toString();
  
-    let itContainThree = numberAsString.includes("3");
+    const itContainThree = numberAsString.includes("3");
 
     if (canBeDividedByThreeAndFive) return "FizzBuzz";
     if (canBeDividedByThree) return "Fizz";
