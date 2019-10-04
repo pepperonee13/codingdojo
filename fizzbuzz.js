@@ -1,14 +1,19 @@
-function compute(number) {
-    let result = [];
-    for (let key = 1; key <= number; key++) {
-        let canBeDividedByThree = key % 3 === 0;
-        let canBeDividedByFive = key % 5 === 0;
+function parseNumberToFizzBuzz(number){
+    let canBeDividedByThree = number % 3 === 0;
+    let canBeDividedByFive = number % 5 === 0;
 
-        if (canBeDividedByThree) result.push("Fizz");
-        else if (canBeDividedByFive) result.push("Buzz");
-        else if (canBeDividedByThree && canBeDividedByFive) result.push("FizzBuzz");
-        else result.push(key.toString());
+    if (canBeDividedByThree) return "Fizz";
+    else if (canBeDividedByFive) return "Buzz";
+    else return number.toString();
+}
+
+function compute(maxValue) {
+    const result = [];
+
+    for (let number = 1; number <= maxValue; number++) {
+        result.push(parseNumberToFizzBuzz(number));
     }
+
     return result;
 }
 
