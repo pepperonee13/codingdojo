@@ -13,4 +13,8 @@ describe('FizzBuzz tests', function () {
         let computeCollection = compute(13);
         assert.equal(computeCollection[12], 'Fizz');
     })
+    it('should be Buzz if contains 5', function () {
+        let computeCollection = compute(52);
+        assert.equal(computeCollection[51], 'Buzz');
+    })
 });
