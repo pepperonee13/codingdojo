@@ -3,9 +3,14 @@ function parseNumberToFizzBuzz(number){
     let canBeDividedByFive = number % 5 === 0;
     let canBeDividedByThreeAndFive = number % 15 === 0;
 
+    const numberAsString = number.toString();
+ 
+    let itContainThree = numberAsString.includes("3");
+
     if (canBeDividedByThreeAndFive) return "FizzBuzz";
     if (canBeDividedByThree) return "Fizz";
     if (canBeDividedByFive) return "Buzz";
+    if(itContainThree) return "Fizz";
     return number.toString();
 }
 
