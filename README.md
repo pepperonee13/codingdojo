@@ -1,4 +1,5 @@
 # FizzBuzz
+### [Kata](http://codingdojo.org/kata/FizzBuzz/) from codingdojo.org
 
 ## Your task
 1.	Write a program that prints one line for each number from 1 to 100
